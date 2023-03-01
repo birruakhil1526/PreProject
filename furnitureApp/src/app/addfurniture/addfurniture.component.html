@@ -1,0 +1,49 @@
+<form [formGroup]="addFurniture">
+<div style=" padding: 20px; margin-left: 15%; margin-right: 15%; margin-top: 5%;" >
+    <mat-form-field appearance="outline" >
+        <mat-label>Id</mat-label>
+        <input matInput type="text"   required maxlength="3" formControlName="productId">
+        <div *ngIf="productId?.invalid &&(productId?.dirty||productId?.touched)">
+          <p></p>
+          <div *ngIf="productId?.errors?.['required']" class="asset1" >Id is mandate</div>
+          <div *ngIf="productId?.errors?.['maxlength']" class="asset1" >Id must be greater than 3 characters</div>
+      </div>
+      </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>type</mat-label>
+      <input matInput type="text"  pattern="[a-zA-Z][a-zA-Z ]{0,}" required minlength="3" formControlName="title1">
+      <div *ngIf="title1?.invalid &&(title1?.dirty||title1?.touched)">
+        <p></p>
+        <div *ngIf="title1?.errors?.['required']" class="asset1" >Title is mandate</div>
+        <div *ngIf="title1?.errors?.['minlength']" class="asset1" >Title must be greater than 3 characters</div>
+        <div *ngIf="title1?.errors?.['pattern']" class="asset1">only alphabets are allowed</div>
+    </div>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline"   class="asset">
+      <mat-label>content</mat-label>
+      <input class="two" matInput type="text"  required maxlength="200"  formControlName="content1">
+      <div *ngIf="content1?.invalid &&(content1?.dirty||content1?.touched)">
+        <p></p>
+        <div *ngIf="content1?.errors?.['required']" class="asset1" >Content is mandate</div>
+        <div *ngIf="content1?.errors?.['minlength']" class="asset1" >content must be less than 200 characters</div>
+    </div>
+      
+    </mat-form-field>
+
+
+<mat-form-field appearance="outline"  class="asset">
+  <mat-label>price</mat-label>
+  <input  matInput type="number" name="content1" required max="200"  formControlName="price">
+  <div *ngIf="price?.invalid &&(price?.dirty||price?.touched)">
+    <p></p>
+    <div *ngIf="price?.errors?.['required']" class="asset1" >please add price..</div>
+    
+</div>
+  
+</mat-form-field>
+    <button mat-fab color="primary" aria-label="Example icon button with a bookmark icon" (click)="addFurnitures()">
+      <mat-icon>done_outline</mat-icon>
+    </button>
+  </div>
+</form>

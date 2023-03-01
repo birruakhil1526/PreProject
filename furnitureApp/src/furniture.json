@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "firstname": "Birru",
+      "lastname": "Akhil",
+      "email": "birruakhil17@gmail.com",
+      "password": "12345",
+      "cpassword": "12345",
+      "type": "",
+      "id": 2
+    },
+    {
+      "firstname": "Birru",
+      "lastname": "Akhil",
+      "email": "birruakhil1526@gmail.com",
+      "password": "12345678",
+      "cpassword": "12345678",
+      "type": "",
+      "id": 3
+    }
+  ],
+  "furnitures": [
+    {}
+  ]
+}

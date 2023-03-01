@@ -1,0 +1,23 @@
+<div style=" padding: 20px; margin-left: 15%; margin-right: 15%; margin-top: 5%;" >
+    <form [formGroup]="loginDetails">
+    <mat-form-field appearance="outline">
+      <mat-label>username</mat-label>
+      <input matInput type="text"  required minlength="3" formControlName="email" >
+     
+   
+    </mat-form-field>
+
+    <mat-form-field appearance="outline"  class="asset">
+      <mat-label>password</mat-label>
+      <input class="two" matInput type="text" type="password" required maxlength="200" formControlName="password" >
+      
+    </mat-form-field>
+    <div>
+    <button mat-fab color="primary" aria-label="Example icon button with a bookmark icon" (click)="onLogin()" >
+      <mat-icon>done_outline</mat-icon>
+    </button>
+    
+  </div>
+    
+</form>
+  </div>

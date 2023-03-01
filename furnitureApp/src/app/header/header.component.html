@@ -1,0 +1,14 @@
+<mat-toolbar style="background-color: rgb(242, 255, 0);">
+    
+    
+    <h1 routerLink="">KOKO.com</h1>
+    <span class="example-spacer"></span>
+    <mat-icon routerLink="register">how_to_reg</mat-icon>
+    <mat-icon routerLink="furniture" *ngIf="fs.isLogin">add</mat-icon>
+      
+    
+    
+      
+    <mat-icon routerLink="login">login</mat-icon>
+  </mat-toolbar>
+  <router-outlet></router-outlet>

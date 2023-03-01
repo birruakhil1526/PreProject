@@ -1,0 +1,38 @@
+
+  
+  
+  input{
+    width: 450px;
+    height: 20px;
+    
+  }
+  .mat-form-field {
+    margin: 20px;
+    margin-left: 30%;
+    display: block;
+    width: 450px;
+    color:rgb(247, 206, 23);
+    font-size: large;
+    font-weight: 700;
+    
+  }
+  button{
+    margin-left: 40%;
+    margin-top: 1%;
+    padding: 16px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background-color: chartreuse;
+    color: aliceblue;
+    border: none;
+    display: flex;
+}
+  .asset {
+    padding-left: 0%;
+  }
+  .logout{
+    margin-left: 60%;
+    margin-top: -5%;
+    background-color: red;
+  }
+  

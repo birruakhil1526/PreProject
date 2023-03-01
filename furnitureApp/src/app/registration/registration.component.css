@@ -1,0 +1,32 @@
+.asset1{
+    color: red;
+
+  }
+  mat-form-field{
+   margin-left: 5%;
+   margin-top: 3%;
+   width: 350px; 
+   border:2px black;
+}
+form{
+    margin-left:1% ;
+}
+button{
+    margin-left: 50%;
+    margin-top: 5%;
+    padding: 16px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background-color: chartreuse;
+    color: aliceblue;
+    border: none;
+}
+.example-container .mat-radio-button {
+    margin: 0 12px;
+  }
+label{
+    margin-left: 5%;
+}
+.mat-radio-button{
+    margin-left: 3%;
+}

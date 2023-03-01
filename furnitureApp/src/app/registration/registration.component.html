@@ -1,0 +1,61 @@
+<form [formGroup]="userDetails" >
+    <mat-form-field appearance="outline">
+        <mat-label>FirstName :</mat-label>
+        <input matInput placeholder="FirstName" pattern="[a-zA-Z][a-zA-Z ]{0,}" type="text" formControlName="firstname">
+        <div *ngIf="firstname?.invalid &&(firstname?.dirty||firstname?.touched)">
+            <p></p>
+            <div *ngIf="firstname?.errors?.['required']" class="asset1" >firstname is required</div>
+            <div *ngIf="firstname?.errors?.['minlength']" class="asset1">firstname should have atleast 4characters</div>
+            <div *ngIf="firstname?.errors?.['maxlength']" class="asset1">firstname should have maximum of 20 characters</div>
+            <div *ngIf="firstname?.errors?.['pattern']" class="asset1">only alphabets are allowed</div>
+        </div>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Lastname :</mat-label>
+        <input matInput placeholder="LastName" pattern="[a-zA-Z][a-zA-Z ]{0,}" type="text" formControlName="lastname">
+        <div *ngIf="lastname?.invalid &&(lastname?.dirty||lastname?.touched)">
+            <p></p>
+            <div *ngIf="firstname?.errors?.['required']" class="asset1" >lastname is required</div>
+            <div *ngIf="lastname?.errors?.['minlength']" class="asset1">lastname should have atleast 4characters</div>
+            <div *ngIf="lastname?.errors?.['maxlength']" class="asset1">lastname should have maximum of 20 characters</div>
+            <div *ngIf="lastname?.errors?.['pattern']" class="asset1">only alphabets are allowed</div>
+        </div>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Email :</mat-label>
+        <input matInput placeholder="Email" type="email" formControlName="email">
+        <div *ngIf="email?.invalid &&(email?.dirty||email?.touched)">
+            <p></p>
+            <div *ngIf="email?.errors?.['required']" class="asset1" >email is required</div>
+        </div>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Password :</mat-label>
+        <input matInput placeholder="password" type="password" formControlName="password">
+        
+            <p></p>
+            <div *ngIf="password?.errors?.['required']" class="asset1" >password is required</div>
+        
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Confirm Password :</mat-label>
+        <input matInput placeholder="confirm your password" type="password" formControlName="cpassword">
+        
+            <p></p>
+            
+            <div *ngIf="userDetails?.errors?.['same']==false" class="asset1">password didnot match</div>
+        
+    </mat-form-field>
+   
+    <label>Type: </label>
+      <mat-radio-group formControlName="role" id="role">
+        <mat-radio-button value="Admin">Admin</mat-radio-button>
+        <mat-radio-button value="Customer">Customer</mat-radio-button>
+      </mat-radio-group>
+    <button mat-fab color="primary" aria-label="Example icon button with a bookmark icon" type="reset" [disabled]="userDetails.invalid" (click)="registrationbody()" >
+        <mat-icon>done</mat-icon>
+      
+      </button>
+</form>
+
+  

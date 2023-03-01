@@ -1,0 +1,52 @@
+.example-card {
+  width: 350px;
+  margin-top: 3%;
+  margin-left: 2%;
+  display: inline-table;
+  height: 250px;
+  box-shadow: 5px 5px 5px rgb(187, 187, 187);
+  background-color:lemonchiffon;
+  }
+  mat-icon{
+    margin-top: 20px;
+    margin: 10px;
+    position: relative;
+}
+mat-card-title{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #d0ff00;
+  font-size: xx-large;
+  padding: 3%;
+}
+.shop{
+  color: chartreuse;
+}
+form{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgb(196, 200, 245);
+color: white;
+text-align: center;
+align-content: center;
+display: inline-table;
+}
+.title{
+  font-size: larger;
+  font-weight: bolder;
+}
+mat-form-field{
+  padding: 10px;
+  margin: 10px;
+}
+button{
+  background-color: blue;
+  border: none;
+  padding: 15px;
+
+}
+.quantity{
+  color: black;
+}

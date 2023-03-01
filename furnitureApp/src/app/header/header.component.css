@@ -1,0 +1,16 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  mat-icon{
+    margin: 10px;
+}
+mat-toolbar{
+  box-shadow: 1px 5px 5px rgb(187, 187, 187);
+  height: 80px;
+}
+h1{
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1rem;
+  font-size: larger
+}
